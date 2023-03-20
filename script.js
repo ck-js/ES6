@@ -67,7 +67,22 @@ console.log(result)
 function fixHouse() {
     const fix = "Fix mirror";
 }
-console.log(fix);
 
+const study = false;
+if (study) {
+    let study = "Well done for studying";
+    console.log(study);
+}else {
+    let study = "Why aren't you studying?";
+    console.log(study);
+}
+console.log(study)
 
-
+function playMusic() {
+    const artists = ["AC Slater", "Billy Kenny", "Fisher"];
+    if (artists && artists.length) {
+        const availableArtists = "Artists are available";
+        console.log(availableArtists);
+    }
+}
+playMusic();
