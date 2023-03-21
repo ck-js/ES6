@@ -112,6 +112,27 @@ return "Awe from an arrow function";
 console.log(hello());
 console.log(helloArrowFunction());
 
+const getPrice = (price, discount) => price - (discount * price);
+console.log(getPrice(500, 0.25));
+
+const showPrice = total => {
+    const discount = 0.10;
+    return total - (discount * total);
+}
+console.log(showPrice(100))
+
+const getDefaultPrice = (price=100, discount=0.10) => {
+return price - (discount * price);
+} 
+console.log(getDefaultPrice());
+
+const getSquare = (number=0) => number * number;
+console.log(getSquare());
+
+const getArea = (length=0,width=0) => length * width;
+console.log(getArea(5, 8))
+
+
 
 
 
