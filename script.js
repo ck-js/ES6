@@ -132,10 +132,39 @@ console.log(getSquare());
 const getArea = (length=0,width=0) => length * width;
 console.log(getArea(5, 8))
 
+const fullName = "Joe Biden";
+console.log("Hello " + fullName + "!");
+console.log(`Hello ${fullName}!`);
 
+const category = `pie`;
+const cake = `Apple${category}`;
+console.log(cake);
 
+const quantity = 10;
+const price = 7;
+const cost = `Total cost: ${quantity * price}`;
+console.log(cost);
 
+// ok below string literal is a bit confusing when calling it with a function
+const stringLiteralGreeting = name=> {
+    return `Bonjour ${name}`;
+}
+console.log(stringLiteralGreeting`Michael`);
 
+let oldMovie = `Fast 1`;
+let latestMovie = `2 fast`;
+let nowShowing = `${oldMovie}, ${latestMovie}`;
+console.log(nowShowing);
+
+let ticketPrice= 200;
+let pax = 3;
+let ticketTotal = `Coachella Ticket Total Price: ${ticketPrice * pax}`
+console.log(ticketTotal)
+
+const likedBy = (user) => {
+    return `Liked by ${user}`;
+}
+console.log(likedBy`Dax`);
 
 
 
