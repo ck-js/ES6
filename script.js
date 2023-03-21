@@ -86,3 +86,35 @@ function playMusic() {
     }
 }
 playMusic();
+
+function getGreeting() {
+    return "Hey there i am a normal function";
+}
+const greeting = () => "Hello from an arrow function";
+console.log(getGreeting());
+console.log(greeting())
+
+function getMonth(month) {
+    return "The month is " + month;
+}
+const month = (month) => {
+return "The month is " + month;
+}   
+console.log(getMonth("March"));
+console.log(month("April"));
+
+const hello = function myFunction() {
+    return "Greetings from my function";
+}
+const helloArrowFunction = () =>{
+return "Awe from an arrow function";
+}
+console.log(hello());
+console.log(helloArrowFunction());
+
+
+
+
+
+
+
